@@ -1,0 +1,37 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "Node.js & TypeScript",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm"
+
+	"features": {},
+	"forwardPorts": [3000],
+	"customizations": {
+	  "vscode": {
+		"extensions": [
+		  "dbaeumer.vscode-eslint",
+		  "esbenp.prettier-vscode",
+		  "bradlc.vscode-tailwindcss",
+		  "formulahendry.auto-rename-tag",
+		  "christian-kohler.path-intellisense",
+		  "streetsidesoftware.code-spell-checker",
+		  "naumovs.color-highlight",
+		  "ms-vsliveshare.vsliveshare",
+		  "github.vscode-github-actions",
+		  "yoavbls.pretty-ts-errors",
+		  "csstools.postcss"
+		],
+		"settings": {
+		  "editor.formatOnSave": true,
+		  "editor.defaultFormatter": "esbenp.prettier-vscode",
+		  "editor.codeActionsOnSave": {
+			"source.fixAll.eslint": true
+		  },
+		  "typescript.tsdk": "node_modules/typescript/lib"
+		}
+	  }
+	},
+	"postCreateCommand": "npm install",
+	"remoteUser": "node"
+}
