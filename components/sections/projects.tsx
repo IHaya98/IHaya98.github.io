@@ -6,30 +6,12 @@ import Github from "@/components/ui/icons/github";
 const PROJECTS = [
   {
     id: 1,
-    title: "AI駆動型分析プラットフォーム",
-    description: "機械学習を活用したデータ分析ソリューション",
-    image:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
-    technologies: ["React", "Python", "TensorFlow"],
-    githubUrl: "",
-  },
-  {
-    id: 2,
-    title: "次世代CMS システム",
-    description: "高度にカスタマイズ可能なコンテンツ管理システム",
-    image:
-      "https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?q=80&w=1000&auto=format&fit=crop",
-    technologies: ["Next.js", "GraphQL", "PostgreSQL"],
-    githubUrl: "",
-  },
-  {
-    id: 3,
-    title: "IoTデバイス管理ダッシュボード",
-    description: "リアルタイムモニタリングと制御インターフェース",
-    image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop",
-    technologies: ["Vue.js", "Node.js", "MongoDB"],
-    githubUrl: "",
+    title: "家計簿作成",
+    description: "Next.jsで家計簿作成",
+    image: "./image/budget-alt.svg",
+    technologies: ["React", "Next.js", "Typescript"],
+    githubUrl: "https://github.com/IHaya98/budget-book",
+    projectUrl: "https://budget-book-six.vercel.app",
   },
 ];
 
@@ -48,8 +30,9 @@ export function ProjectsSection() {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  fill
-                  className="object-cover grayscale group-hover:grayscale-0 transition-all"
+                  width={200}
+                  height={200}
+                  className="object-cover mx-auto"
                 />
               </div>
               <div className="p-6">
@@ -69,7 +52,14 @@ export function ProjectsSection() {
                     >
                       <Github className="h-4 w-4" />
                     </Button>
-                    <Button variant="outline" size="icon" className="border-2">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="border-2"
+                      onClick={() => {
+                        window.location.href = project.projectUrl;
+                      }}
+                    >
                       <ExternalLink className="h-4 w-4" />
                     </Button>
                   </div>

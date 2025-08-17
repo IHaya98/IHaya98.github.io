@@ -11,20 +11,13 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <HeroSection />
       <ProjectsSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
 
       {/* Contact Section */}
       <section className="container mx-auto px-4 py-20 border-t-2 border-zinc-900">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">お問い合わせ</h2>
-          <p className="text-muted-foreground mb-8">
-            新しいプロジェクトや機会についてお話しましょう
-          </p>
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-2">
-            <Button size="lg" variant="outline" className="border-2">
-              <Mail className="mr-2 h-4 w-4" />
-              メールを送る
-            </Button>
+          <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-2">
             <Button
               size="lg"
               variant="outline"

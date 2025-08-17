@@ -11,20 +11,6 @@ const BLOG_POSTS = [
     date: "2024-03-20",
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1000&auto=format&fit=crop"
   },
-  {
-    id: 2,
-    title: "効率的なバックエンド設計のベストプラクティス",
-    excerpt: "スケーラブルなアーキテクチャの構築方法",
-    date: "2024-03-15",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop"
-  },
-  {
-    id: 3,
-    title: "UI/UXデザインの重要性",
-    excerpt: "ユーザー中心設計の実践的アプローチ",
-    date: "2024-03-10",
-    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000&auto=format&fit=crop"
-  }
 ];
 
 export function BlogSection() {

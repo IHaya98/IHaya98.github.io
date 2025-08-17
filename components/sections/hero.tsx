@@ -26,10 +26,10 @@ export function HeroSection() {
         </div>
         <div className="relative w-[280px] h-[280px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden border-4 border-zinc-900">
           <Image
-            src="https://picsum.photos/800"
+            src="./image/avatar.png"
             alt="Profile"
             fill
-            className="object-cover grayscale"
+            className="object-covers"
             priority
           />
         </div>
